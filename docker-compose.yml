@@ -1,0 +1,25 @@
+version: '2'
+services:
+    php-apache:
+        build:
+          context: .
+          dockerfile: Dockerfile
+        ports:
+            - 8087:80
+        volumes:
+            - ./DocumentRoot:/var/www/html:z
+        links:
+            - 'mariadb:mariadb'
+
+    mariadb:
+        image: mariadb:10.5
+        volumes:
+            - ./mysql/data:/var/lib/mysql
+            - ./mysql/init:/docker-entrypoint-initdb.d/:ro
+        environment:
+            TZ: "Europe/Rome"
+            MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+            MYSQL_ROOT_PASSWORD: ""
+            MYSQL_USER: 'root'
+            MYSQL_PASSWORD: ''
+            MYSQL_DATABASE: 'memory'

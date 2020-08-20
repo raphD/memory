@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Memory</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div id="content">
+            <h1>Jeu de m&eacute;moire</h1>
+
+            <img id="scream"  src="images/cards.png" class="invisible">
+            <input type="hidden" id="nomJoueur" class="invisible">
+            <input type="hidden" id="temps" class="invisible">
+
+            <div id="meilleursScores" class="fenetre"> 
+                <h2>Meilleurs scores</h2>
+                <table id="meilleursScoresListe">
+                </table>
+                <button id="nouvellePartieBtn">Nouvelle partie</button>
+            </div>
+
+            <div id="saisieNom" class="invisible fenetre"> 
+                <h2>Saisir votre nom</h2>
+                <input type="text" id="saisieNomTextbox" />
+                <button id="commencerPartieBtn">Commencer la partie</button>
+            </div>
+            
+            <div id="plateau" class="invisible"></div> 
+                
+            <div id="perdu" class="invisible fenetre"> 
+                <h2>Partie perdue :(</h2>
+                <button class="recommencerPartieBtn">Recommencer une nouvelle partie</button>
+            </div>
+            
+            <div id="gagne" class="invisible fenetre"> 
+                <h2>Partie gagn&eacute;e !</h2>
+                <button class="recommencerPartieBtn">Recommencer une nouvelle partie</button>
+            </div>
+            
+            <div id="barreProgression" class="invisible">
+                <div class="bar"></div>
+            </div>
+                    
+        </div>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
