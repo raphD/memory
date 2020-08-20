@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS `scores` (
 INSERT INTO `scores` (`id`, `temps`, `nom`) VALUES
 (1, '60', 'Raph'),
 (2, '58', 'Marina'),
-(3, '87', 'Jean'),
+(3, '87', 'Eva'),
 (4, '102', 'Pierre'),
 (5, '114', 'Francois'),
 (6, '52', 'Bruce'),
@@ -51,10 +51,10 @@ INSERT INTO `scores` (`id`, `temps`, `nom`) VALUES
 (8, '99', 'Miguel'),
 (17, '102', 'Franck'),
 (33, '89', 'Raphaël'),
-(34, '80', 'JEANJEAN'),
-(35, '79', 'Raphaël2'),
-(36, '77', 'Raphaël'),
-(37, '103', 'jo');
+(34, '80', 'Ali'),
+(35, '79', 'Raphaël'),
+(36, '77', 'Léa'),
+(37, '103', 'Johan');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
